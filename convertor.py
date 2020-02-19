@@ -2,9 +2,15 @@
 
 """ Data Structures and Algorithms for CL III, Assignment 6
     See <https://dsacl3-2019.github.io/a6/> for detailed instructions.
-
-    <Please insert your name and the honor code here.>
+    Course:      Data Structures and Algorithms for CL III - WS1920
+    Assignment:  lab 6
+    Author:      Jinghua Xu
+    Description: A constituency to dependency parsing convertor.
+    
+    Honor Code:  I pledge that this program represents my own work.
 """
+
+# hint: not a lot of coding
 
 from dataclasses import dataclass
 from typing import List
@@ -77,10 +83,17 @@ def convert(xml_node):
     xml_node : 
         A xml.etree.ElementTree node to convert.
     """
+    # hints: 20 lines or so
+    # finding, for each word in the sentence, the corresponding head word
+    # multiple HD annotations collide, and none of the words are marked as the head by the constituency annotation
+
+    # a bfs? implemented recursively
 
     # FIXME your code goes here
+    # traverse the XML tree to construct dependency tree
 
     sentence_root = Node()
+    # create root node
     return sentence_root
 
 def to_conll(out, sentence_root):
