@@ -1,0 +1,22 @@
+1	Das	das	ART	ART	_	2	ART.NX.NN	_	_
+2	Altenheim	Altenheim	NN	NN	_	3	NN.NX.VF.SIMPX.LK.VXFIN.VAFIN	_	_
+3	sei	sein	VAFIN	VAFIN	_	3	VAFIN.VXFIN.LK.SIMPX.LK.VXFIN.VAFIN	_	_
+4	"	"	$(	$(	_	3	$(.SIMPX.LK.VXFIN.VAFIN	_	_
+5	ein	ein	ART	ART	_	6	ART.NX.NN	_	_
+6	Prestigeobjekt	Prestigeobjekt	NN	NN	_	3	NN.NX.NX.MF.SIMPX.LK.VXFIN.VAFIN	_	_
+7	von	von	APPR	APPR	_	6	APPR.PX.NX.NX.NN	_	_
+8	ihr	sie	PPER	PPER	_	6	PPER.NX.NX.PX.NX.NX.NN	_	_
+9	und	und	KON	KON	_	8	KON.NX.NX.PPER	_	_
+10	anderen	anderer|andere|anderes	PIS	PIS	_	8	PIS.NX.NX.NX.PPER	_	_
+11	"	"	$(	$(	_	3	$(.SIMPX.LK.VXFIN.VAFIN	_	_
+12	.	.	$.	$.	_	3	$..SIMPX.LK.VXFIN.VAFIN	_	_
+
+1	"	"	$(	$(	_	3	$(.SIMPX.LK.VXFIN.VVFIN	_	_
+2	Es	es	PPER	PPER	_	3	PPER.NX.VF.SIMPX.LK.VXFIN.VVFIN	_	_
+3	gibt	geben	VVFIN	VVFIN	_	3	VVFIN.VXFIN.LK.SIMPX.LK.VXFIN.VVFIN	_	_
+4	so	so	ADV	ADV	_	3	ADV.ADVX.NX.MF.SIMPX.LK.VXFIN.VVFIN	_	_
+5	eine	eine	ART	ART	_	3	ART.NX.MF.SIMPX.LK.VXFIN.VVFIN	_	_
+6	Buchung	Buchung	NN	NN	_	3	NN.NX.MF.SIMPX.LK.VXFIN.VVFIN	_	_
+7	.	.	$.	$.	_	3	$..SIMPX.LK.VXFIN.VVFIN	_	_
+8	"	"	$(	$(	_	3	$(.SIMPX.LK.VXFIN.VVFIN	_	_
+
