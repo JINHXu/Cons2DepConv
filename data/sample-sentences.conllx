@@ -20,3 +20,86 @@
 7	.	.	$.	$.	_	3	$..SIMPX.LK.VXFIN.VVFIN	_	_
 8	"	"	$(	$(	_	3	$(.SIMPX.LK.VXFIN.VVFIN	_	_
 
+1	Aber	aber	KON	KON	_	4	KON.KOORD.SIMPX.LK.VXFIN.VVFIN	_	_
+2	Bremerhavens	Bremerhaven	NE	NE	_	3	NE.NX.NX.NE	_	_
+3	AfB	AfB	NE	NE	_	4	NE.NX.VF.SIMPX.LK.VXFIN.VVFIN	_	_
+4	fordert	fordern	VVFIN	VVFIN	_	0	ROOT	_	_
+5	jetzt	jetzt	ADV	ADV	_	4	ADV.ADVX.MF.SIMPX.LK.VXFIN.VVFIN	_	_
+6	Untersuchungsausschuß	Untersuchungsausschuß	NN	NN	_	5	NN.NX.MF.ADVX.ADV	_	_
+
+1	Wirtschaftspolitisch	wirtschaftspolitisch	ADJD	ADJD	_	2	ADJD.ADJX.VF.SIMPX.LK.VXFIN.VVFIN	_	_
+2	mache	machen	VVFIN	VVFIN	_	0	ROOT	_	_
+3	ein	ein	ART	ART	_	4	ART.NX.NN	_	_
+4	Auto-Umschlagsort	Auto-Umschlagsort	NN	NN	_	2	NN.NX.NX.MF.SIMPX.LK.VXFIN.VVFIN	_	_
+5	Vegesack	Vegesack	NE	NE	_	4	NE.NX.NX.NX.NN	_	_
+6	keinen	kein	PIAT	PIAT	_	7	PIAT.NX.NN	_	_
+7	Sinn	Sinn	NN	NN	_	4	NN.NX.MF.NX.NX.NN	_	_
+8	:	:	$.	$.	_	2	$..SIMPX.LK.VXFIN.VVFIN	_	_
+
+1	Behinderte	behindert	ADJA	ADJA	_	2	ADJA.ADJX.NX.NN	_	_
+2	Menschen	Mensch	NN	NN	_	3	NN.NX.VF.SIMPX.LK.VXFIN.VVFIN	_	_
+3	veranstalteten	veranstalten	VVFIN	VVFIN	_	0	ROOT	_	_
+4	Protesttag	Protesttag	NN	NN	_	3	NN.NX.MF.SIMPX.LK.VXFIN.VVFIN	_	_
+5	in	in	APPR	APPR	_	6	APPR.PX.NX.NE	_	_
+6	Bremen	Bremen	NE	NE	_	4	NE.NX.PX.MF.NX.NN	_	_
+
+1	Für	für	APPR	APPR	_	3	APPR.PX.NX.NN	_	_
+2	diese	diese	PDAT	PDAT	_	3	PDAT.NX.NN	_	_
+3	Behauptung	Behauptung	NN	NN	_	4	NN.NX.PX.VF.SIMPX.LK.VXFIN.VAFIN	_	_
+4	hat	haben%aux	VAFIN	VAFIN	_	0	ROOT	_	_
+5	Beckmeyer	Beckmeyer	NE	NE	_	4	NE.NX.MF.SIMPX.LK.VXFIN.VAFIN	_	_
+6	bisher	bisher	ADV	ADV	_	5	ADV.ADVX.MF.NX.NE	_	_
+7	keinen	kein	PIAT	PIAT	_	8	PIAT.NX.NN	_	_
+8	Nachweis	Nachweis	NN	NN	_	5	NN.NX.MF.NX.NE	_	_
+9	geliefert	liefern	VVPP	VVPP	_	4	VVPP.VXINF.VC.SIMPX.LK.VXFIN.VAFIN	_	_
+10	.	.	$.	$.	_	4	$..SIMPX.LK.VXFIN.VAFIN	_	_
+
+1	Oder	oder	KON	KON	_	2	KON.KOORD.SIMPX.LK.VXFIN.VAFIN	_	_
+2	ist	sein	VAFIN	VAFIN	_	0	ROOT	_	_
+3	Bremerhaven	Bremerhaven	NE	NE	_	2	NE.NX.MF.SIMPX.LK.VXFIN.VAFIN	_	_
+4	nicht	nicht	PTKNEG	PTKNEG	_	3	PTKNEG.ADVX.MF.NX.NE	_	_
+5	günstiger	günstiger	ADJD	ADJD	_	3	ADJD.ADJX.MF.NX.NE	_	_
+6	?	?	$.	$.	_	2	$..SIMPX.LK.VXFIN.VAFIN	_	_
+
+1	Hat	haben%aux	VAFIN	VAFIN	_	0	ROOT	_	_
+2	Beckmeyer	Beckmeyer	NE	NE	_	1	NE.NX.NX.MF.SIMPX.LK.VXFIN.VAFIN	_	_
+3	als	als	KOKOM	KOKOM	_	4	KOKOM.NX.NN	_	_
+4	BLG-Aufsichtsratsvorsitzender	BLG-Aufsichtsratsvorsitzender	NN	NN	_	2	NN.NX.NX.NX.NE	_	_
+5	nur	nur	ADV	ADV	_	2	ADV.ADVX.MF.NX.NX.NE	_	_
+6	BLG-Interessen	BLG-Interesse	NN	NN	_	2	NN.NX.MF.NX.NX.NE	_	_
+7	verteidigt	verteidigen	VVPP	VVPP	_	1	VVPP.VXINF.VC.SIMPX.LK.VXFIN.VAFIN	_	_
+8	?	?	$.	$.	_	1	$..SIMPX.LK.VXFIN.VAFIN	_	_
+
+1	"	"	$(	$(	_	3	$(.SIMPX.LK.VXFIN.VVFIN	_	_
+2	Ich	ich	PPER	PPER	_	3	PPER.NX.VF.SIMPX.LK.VXFIN.VVFIN	_	_
+3	finde	finden	VVFIN	VVFIN	_	0	ROOT	_	_
+4	es	es	PPER	PPER	_	3	PPER.NX.MF.SIMPX.LK.VXFIN.VVFIN	_	_
+5	gut	gut	ADJD	ADJD	_	4	ADJD.ADJX.MF.NX.PPER	_	_
+6	,	,	$,	$,	_	3	$,.SIMPX.LK.VXFIN.VVFIN	_	_
+7	daß	daß	KOUS	KOUS	_	7	KOUS.C.SIMPX.C.KOUS	_	_
+8	das	das	ART	ART	_	9	ART.NX.NN	_	_
+9	Aktionsprogramm	Aktionsprogramm	NN	NN	_	7	NN.NX.MF.SIMPX.C.KOUS	_	_
+10	nun	nun	ADV	ADV	_	9	ADV.ADVX.MF.NX.NN	_	_
+11	in	in	APPR	APPR	_	14	APPR.PX.NX.NN	_	_
+12	einer	eine	ART	ART	_	14	ART.NX.NN	_	_
+13	breiten	breit	ADJA	ADJA	_	14	ADJA.ADJX.NX.NN	_	_
+14	Öffentlichkeit	Öffentlichkeit	NN	NN	_	9	NN.NX.PX.MF.NX.NN	_	_
+15	diskutiert	diskutieren	VVPP	VVPP	_	16	VVPP.VXINF.VC.VXFIN.VAFIN	_	_
+16	wird	werden%passiv	VAFIN	VAFIN	_	7	VAFIN.VXFIN.VC.SIMPX.C.KOUS	_	_
+17	.	.	$.	$.	_	3	$..SIMPX.LK.VXFIN.VVFIN	_	_
+18	"	"	$(	$(	_	3	$(.SIMPX.LK.VXFIN.VVFIN	_	_
+
+1	Kritik	Kritik	NN	NN	_	2	NN.NX.VF.SIMPX.LK.VXFIN.VVFIN	_	_
+2	äußerten	äußern	VVFIN	VVFIN	_	0	ROOT	_	_
+3	hingegen	hingegen	ADV	ADV	_	2	ADV.ADVX.MF.SIMPX.LK.VXFIN.VVFIN	_	_
+4	die	der|die|das	ART	ART	_	6	ART.NX.NN	_	_
+5	Bremer	Bremer	ADJA	ADJA	_	6	ADJA.ADJX.NX.NN	_	_
+6	Grünen	Grüner|Grüne|Grünes	NN	NN	_	3	NN.NX.MF.ADVX.ADV	_	_
+7	.	.	$.	$.	_	2	$..SIMPX.LK.VXFIN.VVFIN	_	_
+
+1	Privatuni	Privatuni	NN	NN	_	4	NN.NX.NX.VF.SIMPX.LK.VXFIN.VAFIN	_	_
+2	in	in	APPR	APPR	_	3	APPR.PX.NX.NE	_	_
+3	Grohn	Grohn	NE	NE	_	1	NE.NX.PX.NX.NX.NN	_	_
+4	wird	werden%passiv	VAFIN	VAFIN	_	0	ROOT	_	_
+5	finanziert	finanzieren	VVPP	VVPP	_	4	VVPP.VXINF.VC.SIMPX.LK.VXFIN.VAFIN	_	_
+
