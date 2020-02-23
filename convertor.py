@@ -114,8 +114,6 @@ def convert(xml_node):
 
             # go down until hitting the head leaf node
             while True:
-                print(current_node.tag)
-                print(current_node.attrib)
                 child_id = current_node.attrib['HEAD']
                 child = id2node[child_id]
                 cs_nodes.append(child)
@@ -241,7 +239,6 @@ def mark_head(xml_node):
                     children_HD.append(word_node)
                 else:
                     children_nonHD.append(word_node)
-
 
         # each DIRECT child node of current node
         for node in xml_node.findall('node'):
