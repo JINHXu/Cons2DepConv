@@ -139,6 +139,7 @@ def convert(xml_node):
                 # go up until hitting the CONSTITUENCY node
                 while True:
                     if 'parent' not in current_node.attrib.keys():
+                        current_node = xml_node
                         break
                     # the id of current node
                     historical_id = current_node.attrib['{http://www.w3.org/XML/1998/namespace}id']
@@ -153,6 +154,8 @@ def convert(xml_node):
                         break
                 # the head of the current CONSTITUENT node has not been visited
                 if historical_id != current_node.attrib['HEAD']:
+                    break
+                if current_node == xml_node:
                     break
 
             # this word is the root node
@@ -232,13 +235,14 @@ def mark_head(xml_node):
                 children_HD.append(node)
             else:
                 children_nonHD.append(node)
-        # children are leaf nodes
-        if len(children_HD) == 0 and len(children_nonHD) == 0:
-            for word_node in xml_node.findall('word'):
-                if word_node.attrib['func'] == "HD":
-                    children_HD.append(word_node)
-                else:
-                    children_nonHD.append(word_node)
+
+        for word_node in xml_node.findall('word'):
+            if word_node.attrib['func'] == '--':
+                continue
+            if word_node.attrib['func'] == "HD":
+                children_HD.append(word_node)
+            else:
+                children_nonHD.append(word_node)
 
         # mark if this is a constituent with multiple children node(for later backtracking)
         if len(children_HD)+len(children_nonHD) > 1:
@@ -253,18 +257,23 @@ def mark_head(xml_node):
             # set the func value of the head node
             head.attrib['func'] == 'HD'
             # mark the head of the current node
-            xml_node.set('HEAD', head.attrib['{http://www.w3.org/XML/1998/namespace}id'])
+            xml_node.set(
+                'HEAD', head.attrib['{http://www.w3.org/XML/1998/namespace}id'])
 
         # 2.
         elif len(children_HD) == 0:
             no_lkchild = True
             for child in children_nonHD:
-                if child.attrib['cat'] == 'LK':
+                attr = 'cat'
+                if child.tag == 'word':
+                    attr = 'pos'
+                if child.attrib[attr] == 'LK':
                     no_lkchild = False
                     # set the func value of the head node
                     child.attrib['func'] = 'HD'
                     # mark the head of current node
-                    xml_node.set('HEAD', child.attrib['{http://www.w3.org/XML/1998/namespace}id'])
+                    xml_node.set(
+                        'HEAD', child.attrib['{http://www.w3.org/XML/1998/namespace}id'])
                     break
             if no_lkchild:
                 # left-most child node is the head
@@ -272,7 +281,8 @@ def mark_head(xml_node):
                 # set the func value of the head node
                 head.attrib['func'] == 'HD'
                 # mark the head of the current node
-                xml_node.set('HEAD', head.attrib['{http://www.w3.org/XML/1998/namespace}id'])
+                xml_node.set(
+                    'HEAD', head.attrib['{http://www.w3.org/XML/1998/namespace}id'])
         # 3.
         else:
             # left-most child node is the head
@@ -280,11 +290,13 @@ def mark_head(xml_node):
             # set the func value of the head node
             head.attrib['func'] == 'HD'
             # mark the head of the current node
-            xml_node.set('HEAD', head.attrib['{http://www.w3.org/XML/1998/namespace}id'])
+            xml_node.set(
+                'HEAD', head.attrib['{http://www.w3.org/XML/1998/namespace}id'])
 
         # recursive calls
         for node in xml_node.findall('node'):
             mark_head(node)
+
     # hitting the leaf node
     else:
         return
@@ -333,7 +345,7 @@ if __name__ == '__main__':
 
     with open('data/sample-sentences.conllx', mode='w', encoding='utf8') as out_f:
         s = set()
-        for sent in root.findall('.//sentence'):      
+        for sent in root.findall('.//sentence'):
             # the return node(Node) won't be used in to_conll(), but it will modify the original xml file
             sentence_root = convert(sent)
             to_conll(out_f, sent)
