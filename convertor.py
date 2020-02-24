@@ -312,6 +312,11 @@ def mark_head(xml_node):
         for node in xml_node.findall('node'):
             mark_head(node)
 
+        # ne nodes
+        for ne_node in xml_node.findall('ne'):
+            for node in ne_node.findall('node'):
+                mark_head(node)
+
     # hitting the leaf node
     else:
         return
@@ -335,7 +340,10 @@ def to_conll(out, xml_node):
         # col2
         form = word_node.attrib['form']
         # col3
-        lemma = word_node.attrib['lemma']
+        if 'lemma' not in word_node.attrib.keys():
+            lemma = ''
+        else:
+            lemma = word_node.attrib['lemma']
         # col4 & col5
         stts_pos = word_node.attrib['pos']
         # col6: underscore
