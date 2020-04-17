@@ -1,19 +1,10 @@
-# Assignment 6: Parsing
+# Parsing
 
-You need to follow the link on the [private course
-page](https://github.com/dsacl3-2019/dsacl3) to work on your repository. The deadline for this assignment is **Monday, February 24th, 8:00 CET**. 
-
-You are strongly recommended to use git properly/productively: commit every 'unit' of work (e.g., individual exercises) and bug fixes separately. You do not need to worry about the mistakes in the earlier commits. Your assignment will be evaluated based only on the final commit before the deadline. Also, don't forget to add your information and the honor code to each file that you modify.
-
-This assignment covers parsing, and has two subproblems. 
-
-**Also, remember that your code is written once and read many times. The classes and methods you implement should be properly documented using docstrings.**
 
 ## Constituency to Dependency Parsing Covertor
 
-Your task for this assignment is to write a convertor from constituency to dependency parsing.
-
-You will be working with a small sample of the [TüBa-D/Z treebank](https://uni-tuebingen.de/en/faculties/faculty-of-humanities/departments/modern-languages/department-of-linguistics/chairs/general-and-computational-linguistics/resources/corpora/tueba-dz/), a a manually annotated constituency treebank of German developed at the University of Tübingen.
+A convertor from constituency to dependency parsing.
+A small sample of the [TüBa-D/Z treebank](https://uni-tuebingen.de/en/faculties/faculty-of-humanities/departments/modern-languages/department-of-linguistics/chairs/general-and-computational-linguistics/resources/corpora/tueba-dz/), a manually annotated constituency treebank of German developed at the University of Tübingen.
 
 A sample sentence from this constituency treebank looks like this:
 
@@ -114,5 +105,3 @@ The resulting dependency annotations should be written to a file, `sample-senten
 The sample sentence transformed using the procedure described above will look like this:
 
 ![sample tree](img/deptree.png)
-
-As mentioned above, feel free to use as much or as little of the starter code as you like. The only requirement is that when run your convertor produces the `sample-sentences.conllx` file with the corectly converted sample sentences.
