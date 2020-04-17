@@ -71,7 +71,7 @@ The consitituency annotation includes a topological fields annotation layer - `V
 
 Each sentence can be seen as a graph where the words are the nodes and the dependency relations are the edges. You can traverse and process the sentence using any approach you find suitable.
 
-The first step in the conversion step is to parse the input XML file and access the information for each sentence. You are provided with some starter code in `convertor.py`, which uses the [`xml.etree.ElementTree`](https://docs.python.org/3.7/library/xml.etree.elementtree.html) library for parsing the XML input.
+The first step in the conversion step is to parse the input XML file and access the information for each sentence. The starter code in `convertor.py` uses the [`xml.etree.ElementTree`](https://docs.python.org/3.7/library/xml.etree.elementtree.html) library for parsing the XML input.
 
 The starter code also defines the classes `Node` and `Relation`, and suggests a recursive approach to implementing the `convert()` function. Feel free to use these classes or come up with an entirely original solution.
 
