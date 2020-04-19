@@ -1,13 +1,7 @@
 #!/usr/bin/env python3
 
-""" Data Structures and Algorithms for CL III, Assignment 6
-    See <https://dsacl3-2019.github.io/a6/> for detailed instructions.
-    Course:      Data Structures and Algorithms for CL III - WS1920
-    Assignment:  lab 6
-    Author:      Jinghua Xu
-    Description: A constituency to dependency parsing convertor.
-    
-    Honor Code:  I pledge that this program represents my own work.
+"""A constituency to dependency parsing convertor.
+by Jinghua Xu
 """
 
 from dataclasses import dataclass
